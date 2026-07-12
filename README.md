@@ -18,4 +18,8 @@
 | 'tcpconnect'|tcp连接模式|
 | `Pscan` | 进入端口扫描模式 |
 | `PingFound` | 进入 ICMP 存活主机探测模式 |
+
 具体请参考scanper -h指令
+编译指令：
+Windows: g++ -I scanper.cpp -o scanper.exe -static-libgcc -lws2_32 -std=c++11 -liphlpapi
+Linux: g++ scanper_Linux.cpp -o scanper.exe
